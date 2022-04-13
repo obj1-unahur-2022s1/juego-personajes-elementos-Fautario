@@ -8,3 +8,15 @@ test "Floki ataca el castilo con la ballesta y 10 flechas" {
 	floki.encontrar(castillo)
 	assert.equals(150 - ballesta.nivelDePotencia(), castillo.nivelDeDefensa())
 }
+
+
+test "Luisa" {
+	
+	luisa.personajeActivo(mario)
+	luisa.aparecerElemento(aurora)
+	luisa.aparecerElemento(castillo)
+	
+	assert.equals(45, luisa.personajeActivo().valorRecolectado())
+	assert.that(luisa.personajeActivo().estaFeliz())
+	assert.equals(170, castillo.nivelDeDefensa())
+}

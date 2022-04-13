@@ -8,7 +8,11 @@ object luisa {
 		personajeActivo = personaje
 	}
 	
-	method apareceElemento(elemento) {
+	method personajeActivo() {
+		return personajeActivo
+	}
+	
+	method aparecerElemento(elemento) {
 		personajeActivo.encontrar(elemento)
 	}
 }
@@ -41,7 +45,11 @@ object mario {
 	}
 	
 	method estaFeliz() {
-		valorRecolectado >= 50 || ultimoElementoEncontrado.altura() >= 10
+		return valorRecolectado >= 50 || ultimoElementoEncontrado.altura() >= 10
+	}
+	
+	method valorRecolectado() {
+		return valorRecolectado
 	}
 }
 
